@@ -1,0 +1,274 @@
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 25);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header h1 {
+    text-align: center;
+}
+
+header h1 a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 54px;
+    color: rgb(240, 93, 80);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: rgba(240, 93, 80, 0.5);
+}
+
+/* Menú */
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 25);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    color: rgba(0, 0, 25, 0.5);
+}
+
+nav ul li .atm {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Contenido principal */
+i {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+q{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+q::before {
+    content: "«";
+}
+
+q::after {
+    content: "»";
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main h2 {
+    font-size: 48px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    margin-top: 7%; /* Espacio arriba */
+}
+
+main h3 {
+    font-size: 26px;
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+}
+
+main p {
+    margin-top: 0.5em; 
+    margin-bottom: 1em; 
+}
+
+main a {
+    color: rgb(240, 93, 80);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: rgba(240, 93, 80, 0.5);
+}
+
+article p {
+    font-size: 1em;
+    margin-top: 0.5em; 
+    margin-bottom: 1em; 
+}
+
+article > h3:first-of-type {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+
+article > p:first-of-type {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+section.centrado p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-bottom: 1em; 
+
+}
+
+section.centrado p:last-child {
+    text-align: left; 
+    font-weight: bold;
+    margin:0;
+    margin-right: 33%; 
+}
+
+dl {
+    margin-top: 3em;
+}
+
+dt {
+    margin: 15px auto;
+    max-width: 97%;
+}
+dd {
+    font-size: 19px;
+    margin-left: 5%;
+}
+
+#altavoz p:last-child > i {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#poesia p:first-of-type {
+    font-size: 1.35em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 33px;
+    margin-bottom: 0;
+}
+
+#poesia p:nth-of-type(2) {
+    font-size: 1em;
+    margin-left: 33px;
+}
+
+#poesia p:last-of-type {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#idiomas {
+    list-style-type: none;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    color: rgba(0, 0, 25, 0.5);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nom {
+    color: rgb(240, 93, 80);
+    font-weight: initial;
+    font-size: 19px;
+}
+
+.nom-motiv {
+    font-weight: bold;
+    color: rgb(240, 93, 80);
+    font-size: 24px;
+}
+
+
+.anyos-gris {
+    list-style-type: square;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0,0,25,0.5);
+    max-width: 85%;
+    margin: auto;
+}
+
+.anyos-gris::marker {
+    color: black; /* Esto asegurará que los cuadraditos permanezcan negros */
+    font-size: 20px;
+}
+
+.fuente {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px;
+    
+}
+
+
+/* Imagen */
+figure {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 35px;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+figure:first-of-type figcaption {
+    font-size: 12px; 
+    margin-top: 10px;
+}
+
+/* Video */
+.video {
+    text-align: center;
+    margin: 28px;
+}
+
+.video > p {
+    font-size: 11px;
+    margin-top: 1.5%;
+}
+
+iframe {
+    border: none;
+}
+
+/* Pie de página */
+footer {
+    background-color: rgb(0, 0, 25);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2em;
+    padding-top: 3em;
+    margin-top: 5%;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(240, 93, 80);
+}
+
+footer > p:nth-of-type(2) {
+    font-size: 0.8em;
+}
+
