@@ -1,0 +1,26 @@
+nav ul li {
+  width: 33.3333333333%;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+nav {
+  background-color: #2c3e50;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+nav ul li:hover {
+  background-color: #080b0e;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  border-bottom: 2px solid #ecf0f1;
+}/*# sourceMappingURL=activitat2.css.map */

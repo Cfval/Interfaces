@@ -1,0 +1,52 @@
+@use "sass:math";
+
+// Variables
+$color-fondo: #2c3e50; // Azul oscuro elegante
+$color-texto: #ecf0f1; // Blanco grisáceo
+$color-hover: darken($color-fondo, 20%);
+$num-items: 3;
+
+// Mixins
+@mixin transition-bg {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@mixin border-bottom {
+  border-bottom: 2px solid $color-texto;
+}
+
+// Placeholder selector
+%menu-item {
+    width: math.div(100%, $num-items); // Calcula el ancho exacto en función del total de elementos
+    text-align: center;
+    padding: 10px;
+    display: inline-block; 
+    @include transition-bg;
+  }
+
+// Estilos
+nav {
+  background-color: $color-fondo;
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    li {
+      @extend %menu-item;
+
+      &:hover {
+        background-color: $color-hover;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-texto;
+        @include border-bottom;
+      }
+    }
+  }
+}

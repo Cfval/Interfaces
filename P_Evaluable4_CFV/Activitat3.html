@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-700 text-white p-6 text-center">
+        <h1 class="text-4xl font-bold">Fashion World</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:text-yellow-400">Inicio</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Catálogo</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Ofertas</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Blog</a></li>
+                <li><a href="#" class="hover:text-yellow-400">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="relative bg-cover bg-center h-64 flex items-center justify-center text-white text-3xl font-bold bg-gray-700" style="background-image: url('https://picsum.photos/1200/400');">
+        <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+            ¡Descuentos exclusivos esta semana!
+        </div>
+    </section>
+
+    <section class="container mx-auto my-12">
+        <h2 class="text-2xl font-bold text-center mb-6">Productos Destacados</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://picsum.photos/640/480" alt="Producto" class="w-full">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Sudadera</h3>
+                    <p class="text-lg text-gray-700">29.99€</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://picsum.photos/640/480" alt="Producto" class="w-full">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Zapatos</h3>
+                    <p class="text-lg text-gray-700">49.99€</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://picsum.photos/640/480" alt="Producto" class="w-full">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Bolso</h3>
+                    <p class="text-lg text-gray-700">19.99€</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <p>&copy; 2024 Fashion World - Todos los derechos reservados</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="hover:text-yellow-400">Facebook</a>
+            <a href="#" class="hover:text-yellow-400">Instagram</a>
+            <a href="#" class="hover:text-yellow-400">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
